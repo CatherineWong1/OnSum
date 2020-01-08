@@ -1,12 +1,12 @@
 # OnSum
-##数据集格式：
+## 数据集格式：
 src, src_txt, target, target_txt, df, label
 
 
-##整体的思路：
+## 整体的思路：
 对df的值进行一个二分类，每一个位置上最后的值都是0或1，去和固定的lable做ground truth
 
-###网络结构
+### 网络结构
 Train阶段：
 ```
 Input：df: [batch_size, doc_len]
